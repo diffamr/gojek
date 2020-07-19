@@ -1,1 +1,3 @@
 # gojek
+
+php run.php
