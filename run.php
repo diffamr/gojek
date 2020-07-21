@@ -147,8 +147,8 @@ echo " ============================================\n";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Pin Anda = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"112233"}';
+         echo color("green","======================= Pin Anda = 123789 =======================")."\n";
+         $data2 = '{"pin":"123789"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo color("nevy","Input OTP Pin : ");
          $otpsetpin = trim(fgets(STDIN));
