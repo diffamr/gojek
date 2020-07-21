@@ -164,9 +164,9 @@ echo " ============================================\n";
             goto otp;
             }
          }else{
-         echo color("red","Nomor sudah teregistrasi");
+         echo color("red","Nomor sudah terdaftar");
          echo"\n==================================\n\n";
-         echo color("yellow","Silahkan registrasi kembali\n");
+         echo color("yellow","Silahkan daftar dengan nomor baru/fresh\n");
          goto ulang;
          
   }
