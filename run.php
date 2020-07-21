@@ -149,7 +149,7 @@ echo " ============================================\n";
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("green","======================= Pin Anda = 123789 =======================")."\n";
          $data2 = '{"pin":"123789"}';
-         $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
+                          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo color("nevy","Input OTP Pin : ");
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
@@ -157,7 +157,7 @@ echo " ============================================\n";
          echo "\n";
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
-         }else{
+         }
             echo color("red","Otp yang anda input salah");
             echo"\n==================================\n\n";
             echo color("yellow","Silahkan input kembali\n");
@@ -168,10 +168,11 @@ echo " ============================================\n";
          echo"\n==================================\n\n";
          echo color("yellow","Silahkan registrasi kembali\n");
          goto ulang;
-         }
+         
   }
 //  }
 
 // echo change()."\n";
+
 
 
