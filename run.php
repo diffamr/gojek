@@ -73,7 +73,7 @@ echo " ============================================\n";
         }else{
         echo "\n".color("red","(+) Message: ".$messageboba10);
         echo "\n";
-        echo "\n".color("yellow","OFF");
+        echo "\n".color("yellow","Mencoba Claim Voucher Gofood");
         echo "\n".color("yellow","Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
