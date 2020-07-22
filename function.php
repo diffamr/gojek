@@ -2,12 +2,9 @@
 
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
 
-$map[0] = '-8.671337,115.212854';
-$map[1] = '-8.687656,115.209744';
-$map[3] = '-5.392746,105.251187';
-$map[4] = '-5.387477,105.270424';
-                $google = $map[rand(0,4)];
-                
+
+
+
 $header[] = "Host: api.gojekapi.com";
 $header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
@@ -17,7 +14,7 @@ $header[] = "X-AppVersion: 3.30.2";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: $google";
+$header[] = "X-Location: -8.671".mt_rand(100,999).",115.21".mt_rand(1000,9999);
 $header[] = "X-Location-Accuracy: 3.0";
 if ($pin):
 $header[] = "pin: $pin";
