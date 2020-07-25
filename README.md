@@ -4,4 +4,6 @@ GOFOOD 20K x 15K MINBUY 30K
 
 
 php run.php ( CLAIM GOFOOD 20K )
+
+
 php 15.php ( CLAIM GOFOOD 15K )
